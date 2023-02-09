@@ -1,0 +1,11 @@
+#This program calculates the 
+#surface area of a cylinder
+
+radius = int(input("please input radius:"))
+pi = 3.142
+diameter = 2 * radius
+height = int(input("please input height:"))
+
+surface_area = 2 *( pi * radius * radius) + (pi * diameter * height)
+
+print("surface_area is:",surface_area)
