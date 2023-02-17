@@ -18,16 +18,53 @@
 # first_name = input("please input name:")
 # def hello (first_name):
     # print("Hello " + first_name)
-# hello(first_name) 
- 
-num1 = eval(input("Input num 1:"))
-num2 = eval(input("Input num 2:"))
-def div (num1/num2)
+# # hello(first_name)
+  
+# cars = {
+# #         "model":"ford",
+#         "year" : 1988,
+#         "color": "red",
+#         "country":"Kenya"
+# }
 
-    print(num1/num2)
-    div(num1/num2)
+# print(cars["year"])
+
+# person = {
+#     "name":"Blair",
+#     "age":31,
+#     "pets":{
+#         "dog":"x",
+#         "cat":"y"
+
+#     }
+# }
+# print (person["pets"]["cat"])
 
 
+# profile = {}
+# profile["username"] = "user123"
+# # profile["age"] = 21
+# profile["email"] = "user123@gmail.com"
 
+# print(profile)
+profile = {}
+def register (): 
+    username = input("Please input username: ")
+    email = input("Please input email: ")
+    password = input("Please input password: ")
 
+    profile["username"] = username
+    profile["email"] = email  
+    profile["password"] = password
 
+def get_profile():
+    print(profile)
+
+def change_username():
+    new_username = input("Enter new username: ")
+    profile["username"] = new_username
+register()
+get_profile()
+
+change_username()
+get_profile()
